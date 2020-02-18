@@ -12,7 +12,7 @@ def fetch_geolocation(query):
 
 
 def main():
-    print(fetch_geolocation("BIG BAZAAR MUMBAI 400018"))
+    print(fetch_geolocation("Mustafa Singapore"))
 
 
 if __name__ == '__main__':
