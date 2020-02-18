@@ -1,0 +1,6 @@
+.idea/
+.DS_Store
+data/output/
+venv/
+*__pycache__*
+data/stores_input.csv
