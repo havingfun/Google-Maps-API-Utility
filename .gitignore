@@ -4,3 +4,6 @@ data/output/
 venv/
 *__pycache__*
 data/stores_input.csv
+data/stores_geolocation_input.csv
+jobs/update_store_lat_long_FG.py
+jobs/find_nearby_supermarkets_FG.py

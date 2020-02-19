@@ -10,14 +10,15 @@ def get_latitude_longitude(query):
     try:
         store_geocode = stores_geolocation.fetch_geolocation(query)
         print(store_geocode)
-        output_write.write(str(store_geocode))
+        output_write.write(query + "\n" + str(store_geocode) + "\n")
         if len(store_geocode) > 0:
             print(
-                store_geocode[0]["formatted_address"] + "\t" + str(store_geocode[0]["geometry"]["location"]["lat"]) + "\t" + str(store_geocode[0]["geometry"]["location"]["lng"])
+                store_geocode[0]["formatted_address"], "\t", str(store_geocode[0]["geometry"]["location"]["lat"]), "\t",
+                str(store_geocode[0]["geometry"]["location"]["lng"])
             )
     except:
         error_message = "Error in fetching geolocation"
-        output_write.write(error_message)
+        output_write.write(error_message + "\n")
         print(error_message)
     output_write.close()
 
